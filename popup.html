@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eyebrak</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Eyebrak</h1>
+
+  <!-- Timer label and countdown -->
+  <p id="timerLabel">Next reminder in:</p>
+  <p id="timer">--:--</p>
+
+  <!-- Streak (hidden until Pomodoro mode active) -->
+  <p id="streakContainer" style="display:none;">
+    Current streak: <span id="streak">0</span> days
+  </p>
+
+  <!-- Pomodoro phase container (hidden until Pomodoro mode) -->
+  <p id="phaseContainer" style="display:none;">
+    Current Phase: <span id="phase">--</span>
+  </p>
+
+  <!-- Controls -->
+  <button id="pauseBtn">Pause</button>
+  <button id="optionsBtn">Settings</button>
+  <button id="statsBtn">Stats</button>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
