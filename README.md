@@ -1,46 +1,46 @@
 ![Eyebrak Banner](https://lh3.googleusercontent.com/D75bM84xmqgwcmM5x7jA0WdJiAHrWXjxX2XgACl1Cs9mTf1HJPfIgyyieYhothp5BwdUhVVVSvaFDjMnYC3Ux-ZYqw=s1280-w1280-h800)
 
-# 👁️ Eyebrak – A Smart Chrome Extension for Eye Protection & Screen Awareness
+# 👁️ DeepCycle – A Smart Chrome Extension for Eye Protection & Screen Awareness
 
-**Eyebrak** is a lightweight and smart Chrome extension designed to help users stay aware of their screen usage, reduce eye strain, and maintain healthy digital habits.
+**DeepCycle** (formerly Eyebrak) is a powerful, multi-sensory Chrome extension designed to help users achieve deep work, reduce eye strain, and build healthy digital habits. 
 
-This extension shows a compact usage bar, timers, and reminders to help users monitor their daily screen time and maintain balance while working.
+Through gamification, precise timers, and custom micro-breaks, DeepCycle makes staying focused and healthy an engaging experience.
 
 ---
 
 ## 🚀 Features
 
-- 🕒 Real-time screen time tracking  
-- ⏱️ Usage bar to visualize active time  
-- 📊 Daily & session-based awareness  
-- 🧠 Helps users maintain healthy digital habits  
-- 🎨 Clean UI with minimal performance impact  
-- 🌐 Works offline and requires no personal data  
+- 🌱 **Virtual Desk Plant Gamification** - Your plant grows as you maintain focus and decays if you go idle.
+- 🧘 **Advanced Health Breaks** - Customizable physical routines (eye rests, stretching) with beautiful countdown overlays.
+- 🔔 **Multi-Sensory Alerts** - Custom sound library, desktop notifications, and smooth glassmorphism browser overlays.
+- 🎯 **Deep Focus Mode** - Built-in site blocker to stop distractions during your Pomodoro "Work" phases.
+- 🕌 **Muslim Salat Reminders** - Automatic geolocation-based prayer reminders.
+- 💧 **Hydration Tracker & Analytics** - Track water intake and monitor your daily activity heatmap.  
 
 ---
 
 ## 📥 Install From Chrome Web Store
 
-👉 **[Install Eyebrak](https://chromewebstore.google.com/detail/eyebrak/kclcldpjhdjdabblaljlfibkdjelclnh)**
+👉 **[Install DeepCycle](https://chromewebstore.google.com/detail/eyebrak/kclcldpjhdjdabblaljlfibkdjelclnh)**
 
 ---
 
 ## 🧩 How It Works
 
-Eyebrak runs quietly in your browser and tracks activity time.  
-It displays a small inline bar on web pages showing:
+DeepCycle runs quietly in your browser and coordinates your productivity periods.  
+It monitors your Pomodoro sessions and initiates:
 
-- Total active minutes  
-- Time passed since last focus event  
-- When your session is getting too long  
+- Strict domain blocking during deep focus phases
+- Deep-breathing countdown overlays during break phases
+- Continuous audio beeps and rich toasts
 
-The goal is simple: **keep your eyes and mind healthy while browsing**.
+The goal is simple: **keep your eyes and mind healthy while mastering your workflow**.
 
 ---
 
 ## 👨‍💻 Contributing
 
-Eyebrak is **open-source** and welcomes contributions!
+DeepCycle is **open-source** and welcomes contributions!
 
 ### Ways to Contribute:
 - Add new features  
@@ -75,7 +75,7 @@ Just keep the original copyright.
 
 ## 🔒 Privacy Policy
 
-Eyebrak does **NOT** collect, store, share, or transmit any personal data.
+DeepCycle does **NOT** collect, store, share, or transmit any personal data.
 
 Read the full Privacy Policy:  
 👉 **https://docs.google.com/document/d/1H-d_OIDWfj39sh9Q5pkCRr96lz-W8Mglr65PCovhvOY/edit?usp=sharing**

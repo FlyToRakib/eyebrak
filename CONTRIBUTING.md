@@ -1,7 +1,7 @@
-# Contributing to Eyebrak
+# Contributing to DeepCycle
 
 Thank you for your interest in contributing!  
-Eyebrak is an open-source Chrome extension created to promote healthy screen usage and digital wellbeing.  
+DeepCycle is an open-source Chrome extension created to promote healthy screen usage, deep focus, and digital wellbeing.  
 We welcome contributions from developers of all experience levels.
 
 ---
@@ -120,6 +120,6 @@ Please try to:
 
 ## ⭐ Thank You
 
-Your contributions help Eyebrak grow and improve.  
+Your contributions help DeepCycle grow and improve.  
 Whether you're fixing a typo or building a new feature — we appreciate it.  
 If you like the project, please **star the repository** to support it!
