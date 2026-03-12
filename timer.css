@@ -1,0 +1,183 @@
+/* timer.css - Standalone Countdown */
+
+:root {
+  --primary-bg: #002719;
+  --text-main: #f5f5f5;
+  --text-dim: #b0bec5;
+  --accent-color: #81c784;
+  --accent-hover: #a5d6a7;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--primary-bg);
+  background-image: radial-gradient(circle at 50% 50%, rgba(129, 199, 132, 0.05) 0%, transparent 70%);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.timer-container {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+}
+
+.input-group {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.tabs {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.tab-btn {
+  background: transparent;
+  color: var(--text-dim);
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab-btn.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn:hover:not(.active) {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#durationInput {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--accent-color);
+  color: var(--text-main);
+  font-size: 64px;
+  font-weight: 800;
+  width: 120px;
+  text-align: center;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  transition: var(--transition);
+}
+
+#durationInput:focus {
+  border-bottom-color: #ffffff;
+}
+
+.muted {
+  font-size: 24px;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+#timeDisplay {
+  font-size: 110px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -3px;
+  text-shadow: 0 4px 20px rgba(129, 199, 132, 0.4);
+  line-height: 1;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.primary-btn {
+  background: var(--accent-color);
+  color: #000;
+  box-shadow: 0 8px 20px rgba(129, 199, 132, 0.2);
+}
+
+.primary-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(129, 199, 132, 0.3);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Pulsing state when almost done */
+.pulsing #timeDisplay {
+  animation: pulse-text 1s infinite alternate;
+  color: #ef5350;
+  text-shadow: 0 4px 25px rgba(239, 83, 80, 0.6);
+}
+
+@keyframes pulse-text {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(1.05); opacity: 0.8; }
+}

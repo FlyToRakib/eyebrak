@@ -1,32 +1,50 @@
 ---
 
-Eyebrak – Version 1.1
-Release Date: 2026-03-12
+DeepCycle CHANGELOG (formerly Eyebrak)
+======================================
 
-Overview:
-A major update focusing on reliability, modern UI/UX, and enhanced break enforcement.
+v2.0 - "The Ultimate Wellness Overhaul" (2026-03-12)
+----------------------------------------------------
+Major Release: The extension has been completely rebranded from Eyebrak to DeepCycle, bringing a brand new multi-sensory approach to digital wellness, gamification, and advanced productivity enforcement.
 
-🚀 Features & Improvements – v1.1
-1. Fix Timer Reset Issue:
-   - Timer now persists correctly even if the background service worker restarts.
-2. Modern Design System:
-   - Completely redesigned UI with a premium Emerald & Sage Green palette.
-   - Glassmorphism effects and modern typography (Inter).
-   - Card-based layout for Settings and Stats.
-3. Interactive Visual Timer:
-   - Visual phase indicators (Work/Break) in the popup.
-4. Hard Break Overlay:
-   - New full-screen dimmed overlay on webpages during Pomodoro breaks to enforce resting.
-5. Modern In-Page Toasts:
-   - Replaced basic system notifications with sleek, interactive in-page toasts.
-6. Enhanced Analytics:
-   - New visual dashboard with a "Wellness Score" tracking your consistency.
+🚀 NEW CORE FEATURES:
+- REBRAND: "Eyebrak" is now "DeepCycle" — reflecting a broader focus on deep work and holistic wellness.
+- NEW: Virtual Plant Gamification — Your digital desk plant grows through 4 visual stages as you complete focus sessions, and decays if you stay idle too long!
+- NEW: Advanced Health Breaks system with customizable physical break routines (e.g., eye rests, stretching).
+- NEW: Multi-sensory 3-way alerts (Overlay, Notification, and looping Continuous Audio Beep).
+- NEW: Custom Sound Library — Upload your own MP3/WAV files for notifications and ambient noise.
+- NEW: Muslim Salat Reminder — Automatically fetches and schedules desktop notifications for the 5 daily prayers based on your city/country.
+- NEW: Custom Reminders Engine — Create one-time or repeating custom interval text alerts.
+- NEW: Focus Mode (Site Blocker) to strictly block distracting websites (facebook.com, youtube.com, etc.) during Pomodoro "Work" phases via a beautiful dedicated block page.
+- NEW: Hydration Tracker to track your daily water intake directly from the popup.
+- NEW: Smart Idle Detection to automatically pause the timer when you're away from your PC.
+- NEW: Activity Heatmap in Stats showing your active minutes per hour.
+- NEW: Streak system with daily reset ('🔥 Level Up!' streak toast notification after each completed Pomodoro cycle).
 
-🐛 Bug Fixes – v1.1
-- Fixed a critical bug where the timer would reset to its full duration on extension updates or browser restarts.
-- Optimized storage usage for better performance.
-- Fixed layout issues on the Options page for smaller screens.
+✨ UI & IMPROVEMENTS:
+- IMPROVED: Fully animated SVG countdown circle overlays for Pomodoro Focus Breaks, matching the beautiful aesthetic of Health Breaks.
+- IMPROVED: Overlays now feature a 70% opacity dark glassmorphism background to heavily dim distracting active tabs without entirely hiding them.
+- IMPROVED: Options page has been completely redesigned with a card-based layout, organized settings, and a new strict mode lock.
+- IMPROVED: Smarter Idle Detection prevents Pomodoro timer desyncs when stepping away from the keyboard.
+- IMPROVED: Real-time dynamic alarm synchronization ensures settings changes trigger immediate background updates without reloading.
+- IMPROVED: Timer ring uses a blue-to-cyan gradient stroke with glow effect and pulses when paused or in final 60 seconds.
+- IMPROVED: Body theme shifts to green accent during Pomodoro Break phases.
 
-📌 Notes
-- Version 1.1 marks the transition to a more "Pro" wellness tool with active break enforcement.
-- Toasts and Overlays require permissions for all sites to function correctly.
+🐛 BUG FIXES:
+- FIX: Resolved issue where the Continuous Beep failed to trigger due to a missing variable registration.
+- FIX: Resolved issue where the Health Break beep card was permanently hidden in the settings UI.
+- FIX: Resolved Chrome extension alarm limitations by enforcing valid minimum interval schedules for fast-looping beeps.
+- FIX: Fixed bug where default Health Break routines were not saving on initial vanilla installations.
+- FIX: Fixed issue where Pomodoro breaks were only displaying a rudimentary breathing animation instead of a proper countdown clock.
+- FIX: Settings page Save button now works reliably with null-safe JS.
+- FIX: Race condition between updateAlarm and updateSettings removed.
+
+---
+
+Eyebrak – Version 1.1 (2026-03-12)
+----------------------------------
+- Fix Timer Reset Issue: Timer now persists correctly even if the background service worker restarts.
+- Completely redesigned UI with a premium Emerald & Sage Green palette.
+- New full-screen dimmed overlay on webpages during Pomodoro breaks to enforce resting.
+- Replaced basic system notifications with sleek, interactive in-page toasts.
+- New visual dashboard with a "Wellness Score" tracking your consistency.

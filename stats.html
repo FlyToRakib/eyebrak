@@ -32,6 +32,29 @@
   </div>
 
   <div class="card">
+    <h3>💧 Hydration Progress</h3>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+      <span id="waterStatText">0 / 8 glasses</span>
+      <span class="stat-value" id="waterPercent">0%</span>
+    </div>
+    <div style="height: 8px; background: var(--secondary-bg); border-radius: 4px; margin-top: 8px; overflow: hidden;">
+      <div id="waterBar" style="height: 100%; width: 0%; background: #4fc3f7; transition: width 0.5s ease;"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>📊 Daily Activity (Active Minutes)</h3>
+    <div id="activityGraph" style="display: flex; align-items: flex-end; gap: 4px; height: 100px; margin-top: 15px; border-bottom: 1px solid var(--glass-border); padding-bottom: 5px;">
+      <!-- Bars injected via JS -->
+    </div>
+    <div style="display: flex; justify-content: space-between; font-size: 10px; color: var(--text-dim); margin-top: 5px;">
+      <span>12 AM</span>
+      <span>12 PM</span>
+      <span>11 PM</span>
+    </div>
+  </div>
+
+  <div class="card">
     <h3>Wellness Score</h3>
     <div style="height: 12px; background: var(--secondary-bg); border-radius: 6px; margin-top: 12px; overflow: hidden;">
       <div id="wellnessBar" style="height: 100%; width: 0%; background: var(--accent-color); transition: width 1s ease-out;"></div>

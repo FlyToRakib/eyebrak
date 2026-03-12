@@ -1,15 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Eyebrak",
-  "version": "1.1",
-  "description": "Smart breaks, Pomodoro cycles, eye care tips, and streak tracking for digital wellness.",
-  "permissions": ["storage", "notifications", "alarms", "idle", "activeTab", "scripting"],
+  "name": "DeepCycle",
+  "version": "1.5",
+  "description": "Advanced wellness assistant. Focus Mode, Hydration, Eye Care, Ambient Sounds & Gamification.",
+  "permissions": ["storage", "notifications", "alarms", "idle", "activeTab", "scripting", "declarativeNetRequest", "declarativeNetRequestFeedback", "offscreen"],
+  "host_permissions": ["<all_urls>"],
   "background": { "service_worker": "background.js" },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html", "offscreen.html", "sounds/*"],
+      "matches": ["<all_urls>"]
     }
   ],
   "action": { "default_popup": "popup.html", "default_icon": { "16": "icons/icon16.png","48": "icons/icon48.png","128": "icons/icon128.png" } },
