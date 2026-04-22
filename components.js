@@ -7,9 +7,9 @@ const DC_PAGES = {
 };
 
 const DC_LINKS = {
-  review: { label: "Review Us", url: "https://chromewebstore.google.com/detail/deepcycle/kclcldpjhdjdabblaljlfibkdjelclnh/reviews" },
-  tools: { label: "More Tools", url: "https://chromewebstore.google.com/search/degird" },
-  products: { label: "Degird Products", url: "https://degird.com/products#extensions" },
+  review: { label: "Review Us", linkKey: "reviewUs" },
+  tools: { label: "More Tools", linkKey: "moreTools" },
+  products: { label: "Degird Products", linkKey: "degirdProducts" },
 };
 
 // Inject global styles once
@@ -112,12 +112,13 @@ const DC_LINKS = {
       margin-bottom: 10px;
     }
     .dc-footer-links a {
-      color: var(--brand-lime);
+      color: var(--text);
       text-decoration: none;
       font-weight: 500;
-      transition: opacity 0.15s;
+      transition: all 0.15s ease;
     }
     .dc-footer-links a:hover {
+      color: var(--brand-lime);
       opacity: 0.8;
       text-decoration: underline;
     }
@@ -130,7 +131,7 @@ const DC_LINKS = {
       font-size: 10px;
       color: var(--text-muted);
       opacity: 0.45;
-      padding-bottom: 10px;
+      padding-bottom: 4px;
     }
     .dc-footer-brand a {
       color: var(--brand-lime);
@@ -155,7 +156,7 @@ function dcRenderHeader(activePage, description) {
           <span class="dc-header-brand">DeepCycle</span>
           <nav class="dc-header-nav">${nav}</nav>
         </div>
-        <span class="dc-header-powered">Powered by <a href="https://degird.com/products#extensions" target="_blank">Degird</a></span>
+        <span class="dc-header-powered">Powered by <a href="#" data-link="degirdProducts" target="_blank">Degird</a></span>
       </div>
       <hr class="dc-header-sep">
       <p class="dc-header-desc">${description}</p>
@@ -164,13 +165,13 @@ function dcRenderHeader(activePage, description) {
 
 function dcRenderFooter() {
   const links = Object.values(DC_LINKS).map(l =>
-    `<a href="${l.url}" target="_blank">${l.label}</a>`
-  ).join('<span class="dot">·</span>');
+    `<a href="#" data-link="${l.linkKey}" target="_blank">${l.label}</a>`
+  ).join('<span class="dot">|</span>');
 
   return `
     <footer class="dc-footer">
+      <div class="dc-footer-brand">Made with focus by <a href="#" data-link="degirdHome" target="_blank">Degird</a> — Build better habits for a balanced life.</div>
       <div class="dc-footer-links">${links}</div>
-      <div class="dc-footer-brand">Made with focus by <a href="https://degird.com" target="_blank">Degird</a> — Build better habits.</div>
     </footer>`;
 }
 

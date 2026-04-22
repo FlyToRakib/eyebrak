@@ -927,7 +927,7 @@ if (previewAmbientBtn) previewAmbientBtn.addEventListener("click", () => playPre
 const previewBeepBtn = document.getElementById("previewBeepBtn");
 if (previewBeepBtn) previewBeepBtn.addEventListener("click", () => playPreviewSound("continuousBeepSoundSelection"));
 
-const shortcutLimits = document.querySelectorAll('a[href="chrome://extensions/shortcuts"]');
+const shortcutLimits = document.querySelectorAll('a[data-link="shortcuts"]');
 shortcutLimits.forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
