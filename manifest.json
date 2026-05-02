@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DeepCycle - Focus Timer & Wellness Assistant",
   "short_name": "DeepCycle",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Boost productivity with Pomodoro timers, site blocking, health breaks, and gamified focus tracking. The ultimate wellness assistant.",
   "permissions": [
     "storage",

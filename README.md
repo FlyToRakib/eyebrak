@@ -1,10 +1,10 @@
 ![Eyebrak Banner](https://lh3.googleusercontent.com/D75bM84xmqgwcmM5x7jA0WdJiAHrWXjxX2XgACl1Cs9mTf1HJPfIgyyieYhothp5BwdUhVVVSvaFDjMnYC3Ux-ZYqw=s1280-w1280-h800)
 
-# 👁️ DeepCycle – A Smart Chrome Extension for Eye Protection & Screen Awareness
+# 🌱 DeepCycle – Focus Timer & Wellness Assistant
 
-**DeepCycle**  is a powerful, multi-sensory Chrome extension designed to help users achieve deep work, reduce eye strain, and build healthy digital habits. 
+**DeepCycle** is a powerful, multi-sensory Chrome extension designed to help users achieve deep work, reduce eye strain, and build healthy digital habits.
 
-Through gamification, precise timers, and custom micro-breaks, DeepCycle makes staying focused and healthy an engaging experience.
+Through gamification, precise timers, custom micro-breaks, and intelligent site blocking, DeepCycle makes staying focused and healthy an engaging experience.
 
 ---
 
@@ -49,18 +49,31 @@ Through gamification, precise timers, and custom micro-breaks, DeepCycle makes s
 - **Activity Heatmap**: View active minutes per hour natively in the stats page.
 - **Wellness Score** tracking your overall consistency.
 
+### 🔗 Centralized Link Management
+- **Dynamic Link System**: All outbound links (Privacy, Review, Support, User Guide, etc.) managed from a single `links.js` configuration file.
+- **Dynamic Copyright Year**: Footer year updates automatically — no manual hardcoding needed.
+
+### 🎨 Static Global UI Architecture
+- **Flicker-Free Layout**: Header and footer are rendered as static HTML — no JavaScript injection delays.
+- **Unified Navigation**: Consistent header with brand name (left), SETTINGS | ANALYTICS tabs (center), POWERED BY DEGIRD (right).
+- **Tab Reuse**: Clicking navigation tabs reuses existing browser tabs instead of creating duplicates.
+
 ### ⚙️ Behavior & System Settings
 - **Missed Alert Catch-Up**: Trigger missed notifications upon reopening the browser.
 - **Strict Mode Lock**: Require a password to alter your settings, locking you into your focus configuration.
-- **Keyboard Shortcuts** support.
+- **Keyboard Shortcuts**: `Alt+Shift+D` (open popup), `Alt+Shift+S` (start/pause timer).
 
 ---
 
 ## 📥 Install From Chrome Web Store
 
-👉 **[Install DeepCycle](https://chromewebstore.google.com/detail/eyebrak/kclcldpjhdjdabblaljlfibkdjelclnh)**
+👉 **[Install DeepCycle](https://chromewebstore.google.com/detail/deepcycle/kclcldpjhdjdabblaljlfibkdjelclnh)**
 
 ---
+
+## 📖 How to Use
+
+For a complete step-by-step guide covering every feature, see **[HOW_TO_USE.md](HOW_TO_USE.md)**.
 
 ## 🧩 How It Works
 
@@ -69,7 +82,9 @@ It monitors your Pomodoro sessions and initiates:
 
 - Strict domain blocking during deep focus phases
 - Deep-breathing countdown overlays during break phases
+- Health reminder rotations and hydration tracking
 - Continuous audio beeps and rich toasts
+- Virtual plant growth gamification
 
 The goal is simple: **keep your eyes and mind healthy while mastering your workflow**.
 
@@ -123,7 +138,7 @@ Read the full Privacy Policy:
 
 - 🧑‍💻 Developer Profile: **https://github.com/FlyToRakib**  
 - 🌍 Official Website: **https://degird.com/**  
-- 🛒 Chrome Web Store: https://chromewebstore.google.com/detail/eyebrak/kclcldpjhdjdabblaljlfibkdjelclnh  
+- 🛒 Chrome Web Store: https://chromewebstore.google.com/detail/deepcycle/kclcldpjhdjdabblaljlfibkdjelclnh  
 
 ---
 

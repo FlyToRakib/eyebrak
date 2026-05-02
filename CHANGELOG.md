@@ -1,5 +1,30 @@
 # DeepCycle CHANGELOG (formerly Eyebrak)
 
+## v2.2.0 - "Global UI Modernization & Link Management" (2026-05-03)
+
+### 🚀 NEW FEATURES & IMPROVEMENTS:
+- **NEW**: Centralized Dynamic Link Management (`lib/links.js`) — All outbound links (Privacy, Review Us, More Tools, Support, User Guide, Degird) are now managed from a single configuration file. Update URLs in one place to change them across the entire extension.
+- **NEW**: Static Global Header & Footer — Migrated from dynamic JS-injected headers/footers to fully static HTML components in both Settings and Analytics pages, eliminating layout flicker and rendering delays.
+- **NEW**: Dynamic Copyright Year — Footer copyright (e.g., "© 2026 DEEPCYCLE") now updates automatically using `new Date().getFullYear()`.
+- **NEW**: Comprehensive User Guide (`HOW_TO_USE.md`) — A detailed step-by-step documentation covering every feature of DeepCycle from installation to advanced usage.
+- **IMPROVEMENT**: Unified header layout across Settings and Analytics pages — DeepCycle branding (left), SETTINGS | ANALYTICS navigation tabs (center), POWERED BY DEGIRD (right).
+- **IMPROVEMENT**: Popup header restructured with DeepCycle + POWERED BY DEGIRD branding grouped on the left and settings icon on the right.
+- **IMPROVEMENT**: Navigation tabs now use edge-to-edge full-width containers with consistent 20px padding, matching the design specification.
+- **IMPROVEMENT**: Active tab styling unified — lime green underline and text color for the active page tab across all views.
+- **IMPROVEMENT**: Removed unnecessary extra spacing/padding from the popup layout for a tighter, high-density aesthetic.
+- **IMPROVEMENT**: Tab reuse navigation — clicking Settings or Analytics reuses an existing tab instead of opening duplicates.
+
+### 🐛 BUG FIXES:
+- **FIX**: Resolved double-tab-open bug where clicking the Analytics tab from Settings would create 2 tabs simultaneously (caused by duplicate `dcInitNav()` call).
+- **FIX**: Resolved missing `dcInitNav()` in Settings page that broke header navigation after code cleanup.
+- **FIX**: Cleaned up dead code — removed unused `DC_LINKS` constant and deprecated `dcRenderHeader`/`dcRenderFooter` functions from `components.js`.
+- **FIX**: All header/footer styles centralized into `lib/styles.css` for synchronous rendering (no FOUC).
+
+### 🔒 ARCHITECTURE:
+- **Header/Footer**: Fully static HTML — no JavaScript DOM injection, no layout shifts.
+- **Script Load Order**: `links.js` → `components.js` → page-specific JS (guaranteed correct initialization).
+- **MV3 Compliance**: Zero inline event handlers, all interactions via `addEventListener`.
+
 ## v2.1.0 - "Stability & Visual Polish Update" (2026-04-17)
 
 ### 🚀 NEW FEATURES & IMPROVEMENTS:
