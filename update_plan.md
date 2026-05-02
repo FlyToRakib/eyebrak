@@ -37,6 +37,8 @@ Use a centralized script (e.g., `links.js`) to manage all outbound links dynamic
 // links.js - Centralized configuration for all outbound links
 // Update URLs here to change them across the entire extension without touching HTML.
 
+// links.js - Centralized configuration for all outbound links
+
 const APP_LINKS = {
   privacy: "#",
   reviewUs: "#",
@@ -44,9 +46,10 @@ const APP_LINKS = {
   degirdProducts: "https://degird.com/products#extensions",
   moreTools: "https://chromewebstore.google.com/search/degird",
   support: "https://degird.com/support",
-  userGuide: "https://wpinlearn.com/how-to-use-{extension_name}"
+  userGuide: "https://wpinlearn.com/how-to-use-{extension_name}",
+  shortcuts: "chrome://extensions/shortcuts"
 };
-
+ 
 function initDynamicLinks() {
   document.querySelectorAll('[data-link]').forEach(el => {
     const linkKey = el.getAttribute('data-link');
@@ -54,6 +57,9 @@ function initDynamicLinks() {
       el.href = APP_LINKS[linkKey];
     }
   });
+  // Dynamic copyright year
+  const year = new Date().getFullYear();
+  document.querySelectorAll('.dc-year').forEach(el => { el.textContent = year; });
 }
 
 if (typeof document !== 'undefined') {
@@ -63,6 +69,7 @@ if (typeof document !== 'undefined') {
     initDynamicLinks();
   }
 }
+
 ```
 
 ### 5. Implementation Safety Requirement
